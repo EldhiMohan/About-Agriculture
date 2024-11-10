@@ -1,0 +1,280 @@
+
+
+
+
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops Cultivated in India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    .details {
+        display: none;
+        text-align: left;
+        margin-top: 10px;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        background-color: #f2f2f2;
+    }
+
+    .toggle-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .toggle-button:hover {
+        background-color: #45a049;
+    }
+
+</style>
+<body>
+    <h1>Crops Cultivated in India</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Crop</th>
+                <th>Image</th>
+                <th>Region</th>
+                <th>Season</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rice</td>
+                <td><img src="https://www.health.com/thmb/a8GxwWgmB5KpQW8SfW6VA7UFwaI=/722x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1734160670-0157c2daf8e841d6a783b38aedc51aa8.jpg" alt="Rice"></td>
+                <td>North and East India</td>
+                <td>Kharif</td>
+                <td><button class="toggle-button" onclick="toggleDetails('rice-details')">Show Details</button></td>
+            </tr>
+            <tr id="rice-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> High yield, staple food, source of income for farmers.<br>
+                    <strong>Disadvantages:</strong> Requires a lot of water, pests and diseases may affect crops.
+                </td>
+            </tr>
+            <tr>
+                <td>Wheat</td>
+                <td><img src="https://www.shutterstock.com/image-photo/bunch-paddy-rice-field-before-600nw-2219469869.jpg" alt="Wheat"></td>
+                <td>North India</td>
+                <td>Rabi</td>
+                <td><button class="toggle-button" onclick="toggleDetails('wheat-details')">Show Details</button></td>
+            </tr>
+            <tr id="wheat-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Easy to store, rich in carbohydrates, supports rural economy.<br>
+                    <strong>Disadvantages:</strong> Susceptible to pests, requires cold temperature.
+                </td>
+            </tr>
+            <tr>
+                <td>Barley</td>
+                <td><img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/295/295268/barley-grains-in-a-wooden-bowl.jpg" alt="Barley"></td>
+                <td>North India</td>
+                <td>Rabi</td>
+                <td><button class="toggle-button" onclick="toggleDetails('barley-details')">Show Details</button></td>
+            </tr>
+            <tr id="barley-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Drought resistant, used for food and animal feed.<br>
+                    <strong>Disadvantages:</strong> Requires cool temperatures, susceptible to fungal diseases.
+                </td>
+            </tr>
+            <tr>
+                <td>Tea</td>
+                <td><img src="https://buytea.com/cdn/shop/articles/green-tea-in-glass.webp?v=1698213126" alt="Tea"></td>
+                <td>Assam, Darjeeling, Nilgiri Hills</td>
+                <td>Annual</td>
+                <td><button class="toggle-button" onclick="toggleDetails('tea-details')">Show Details</button></td>
+            </tr>
+            <tr id="tea-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> High demand in the global market, provides employment.<br>
+                    <strong>Disadvantages:</strong> Labour-intensive, requires a specific climate.
+                </td>
+            </tr>
+            <tr>
+                <td>Coffee</td>
+                <td><img src="https://thumbs.dreamstime.com/b/coffee-leaves-cup-freshly-brewed-plant-to-concept-333649483.jpg" alt="Coffee"></td>
+                <td>Karnataka, Kerala</td>
+                <td>Annual</td>
+                <td><button class="toggle-button" onclick="toggleDetails('coffee-details')">Show Details</button></td>
+            </tr>
+            <tr id="coffee-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> High export potential, good for the economy.<br>
+                    <strong>Disadvantages:</strong> Needs specific climatic conditions, can be prone to diseases like leaf rust.
+                </td>
+            </tr>
+            <tr>
+                <td>Jute</td>
+                <td><img src="https://media.istockphoto.com/id/1185911458/photo/jute-plant-stems-laid-for-drying-in-the-sun.jpg?s=612x612&w=0&k=20&c=wKrT30GXG12xC0cJbxrOIr5HvjmzRvcTUtYCfi_lgNI=" alt="Jute"></td>
+                <td>West Bengal, Bihar</td>
+                <td>Summer</td>
+                <td><button class="toggle-button" onclick="toggleDetails('jute-details')">Show Details</button></td>
+            </tr>
+            <tr id="jute-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Used in textiles and bags, biodegradable.<br>
+                    <strong>Disadvantages:</strong> Requires a lot of water, prone to disease.
+                </td>
+            </tr>
+            <tr>
+                <td>Groundnut</td>
+                <td><img src="https://static.vecteezy.com/system/resources/thumbnails/049/790/397/small/a-farmer-holding-freshly-harvested-peanuts-with-roots-in-a-field-photo.jpg" alt="Groundnut"></td>
+                <td>Gujarat, Andhra Pradesh</td>
+                <td>Kharif</td>
+                <td><button class="toggle-button" onclick="toggleDetails('groundnut-details')">Show Details</button></td>
+            </tr>
+            <tr id="groundnut-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Rich in protein, used in cooking oil production.<br>
+                    <strong>Disadvantages:</strong> Sensitive to drought, susceptible to pests.
+                </td>
+            </tr>
+            <tr>
+                <td>Mustard</td>
+                <td><img src="https://www.gyanwani.com/wp-content/uploads/2024/10/images-10-2.jpeg" alt="Mustard"></td>
+                <td>North India</td>
+                <td>Rabi</td>
+                <td><button class="toggle-button" onclick="toggleDetails('mustard-details')">Show Details</button></td>
+            </tr>
+            <tr id="mustard-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Rich in oil content, helps in soil fertilization.<br>
+                    <strong>Disadvantages:</strong> Requires moderate rainfall, prone to fungal diseases.
+                </td>
+            </tr>
+            <tr>
+                <td>Potato</td>
+                <td><img src="https://www.shutterstock.com/image-photo/fresh-potatoes-wooden-box-260nw-2469950225.jpg" alt="Potato"></td>
+                <td>Uttar Pradesh, West Bengal</td>
+                <td>Rabi</td>
+                <td><button class="toggle-button" onclick="toggleDetails('potato-details')">Show Details</button></td>
+            </tr>
+            <tr id="potato-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Easy to store, widely consumed, versatile.<br>
+                    <strong>Disadvantages:</strong> Prone to blight, requires cool and moist conditions.
+                </td>
+            </tr>
+            <tr>
+                <td>Ginger</td>
+                <td><img src="https://cdn.shopify.com/s/files/1/0685/6343/5733/files/Image124.png" alt="Ginger"></td>
+                <td>Kerala, West Bengal</td>
+                <td>Annual</td>
+                <td><button class="toggle-button" onclick="toggleDetails('ginger-details')">Show Details</button></td>
+            </tr>
+            <tr id="ginger-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Used in cooking and medicine, high market demand.<br>
+                    <strong>Disadvantages:</strong> Needs high humidity and temperature, susceptible to rhizome rot.
+                </td>
+            </tr>
+            <tr>
+                <td>Onion</td>
+                <td><img src="https://dixondalefarms.com/wp-content/uploads/2021/08/white-bermuda-audrey-mcgraff-fuller-nm.jpeg" alt="Onion"></td>
+                <td>Haryana, Maharashtra</td>
+                <td>Kharif</td>
+                <td><button class="toggle-button" onclick="toggleDetails('onion-details')">Show Details</button></td>
+            </tr>
+            <tr id="onion-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> High demand, used in cooking globally.<br>
+                    <strong>Disadvantages:</strong> Prone to pests, needs specific temperature and soil conditions.
+                </td>
+            </tr>
+            <tr>
+                <td>Tomato</td>
+                <td><img src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-grow-tomatoes-hero.jpg" alt="Tomato"></td>
+                <td>Madhya Pradesh, Andhra Pradesh</td>
+                <td>Kharif</td>
+                <td><button class="toggle-button" onclick="toggleDetails('tomato-details')">Show Details</button></td>
+            </tr>
+            <tr id="tomato-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Rich in vitamins, high demand.<br>
+                    <strong>Disadvantages:</strong> Sensitive to diseases, needs careful irrigation.
+                </td>
+            </tr>
+            <tr>
+                <td>Carrot</td>
+                <td><img src="https://premierseedsdirect.com/wp-content/uploads/2021/09/bangor-1.jpg" alt="Carrot"></td>
+                <td>Punjab, Uttar Pradesh</td>
+                <td>Rabi</td>
+                <td><button class="toggle-button" onclick="toggleDetails('carrot-details')">Show Details</button></td>
+            </tr>
+            <tr id="carrot-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> Rich in vitamin A, highly nutritious.<br>
+                    <strong>Disadvantages:</strong> Sensitive to drought, requires well-drained soil.
+                </td>
+            </tr>
+            <tr>
+                <td>Chili</td>
+                <td><img src="https://media.istockphoto.com/id/1316992170/photo/red-chili-peppers-in-vegetable-garden.jpg?s=612x612&w=0&k=20&c=5a5OLXw_wWLHWfv_Y0m2x4fpgHJ0RXc9VBkvPgCEEJE=" alt="Chili"></td>
+                <td>Andhra Pradesh, Tamil Nadu</td>
+                <td>Kharif</td>
+                <td><button class="toggle-button" onclick="toggleDetails('chili-details')">Show Details</button></td>
+            </tr>
+            <tr id="chili-details" class="details">
+                <td colspan="5">
+                    <strong>Advantages:</strong> High market value, used in various cuisines.<br>
+                    <strong>Disadvantages:</strong> Requires high temperature, susceptible to pests.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function toggleDetails(id) {
+            const detailsRow = document.getElementById(id);
+            detailsRow.style.display = detailsRow.style.display === "none" || detailsRow.style.display === "" ? "table-row" : "none";
+        }
+    </script>
+</body>
+</html>
+
+
+
